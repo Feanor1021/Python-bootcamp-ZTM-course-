@@ -8,12 +8,18 @@ string = "Hello world2"
 
 #... There are many ways to do that. In python "" '' are same unlike c. There are no char type
 #There are only strings and it's substrings.
+#...........................................................
+
+#string immutability:
+#You can't change sub value of a string as like as in C. You have to replace it with new string. Old string is deleted.
+#...........................................................
 
 #Accessing values in Strings
 
 print(string)
 print(string[0])
 print(string[-1])
+#...........................................................
 
 #usage = string[start : stop : stepover(default = 1)]
 
@@ -40,6 +46,7 @@ print(string[::-1])#stepover is -1 and othher values are blank. Python gives las
 #If you give a value like that [0:last index] it will start with 0th index and stop at lasth index. It wont write last. index it is stop right there. You have to give + 1.
 # But if don't give any value to'a colon [0:] like this python gives to stop value that it can write every thing.
 #[0:last index:-1] it would not include first letter. But if you don't give any value to it, python gives it right value to write every thing.
+#...........................................................
 
 #string="Hello world2"
 #index = 01234567891011
