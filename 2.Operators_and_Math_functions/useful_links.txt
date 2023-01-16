@@ -4,3 +4,7 @@
 2. Variables and operators --> https://data-flair.training/blogs/python-variables-and-data-types/
 
 3. augmented assignment --> https://www.geeksforgeeks.org/augmented-assignment-operators-in-python/
+
+4. built in math functions --> https://www.linuxtopia.org/online_books/programming_books/python_programming/python_ch04s04.html
+
+5. Math module functions --> https://www.programiz.com/python-programming/modules/math
