@@ -1,0 +1,6 @@
+
+1. General knowledge of strings --> https://www.tutorialspoint.com/python3/python_strings.htm
+
+2. Escape characters --> https://www.scaler.com/topics/escape-sequence-in-python/
+
+3. Genaral knowledge of strings2 --> https://developers.google.com/edu/python/strings
