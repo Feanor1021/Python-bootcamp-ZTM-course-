@@ -1,2 +1,6 @@
 
 1. Precedence and Associativity of Operators in Python --> https://www.programiz.com/python-programming/precedence-associativity
+
+2. Variables and operators --> https://data-flair.training/blogs/python-variables-and-data-types/
+
+3. augmented assignment --> https://www.geeksforgeeks.org/augmented-assignment-operators-in-python/
