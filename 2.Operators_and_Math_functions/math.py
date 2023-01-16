@@ -30,7 +30,6 @@ print(int("1001",2))
 print("\n",max(2,4,62))
 print(min(1,252,1,-323,124))
 
-
 #math module's functions
 #https://www.programiz.com/python-programming/modules/math
 print("\n\n",math.ceil(15.5))
