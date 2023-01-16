@@ -49,3 +49,4 @@ match sel:
         b=int(input("//\n"))
         print("=",(a//b))
         pass
+    
