@@ -28,7 +28,7 @@ print("Hello {0}, your balance is {amount}.".format("Cindy", amount=50))
 
 print("\n\nUsage of f\"\"")
 
-print(f"Hello {val1}, your balance is {val2}.")
+print(f"Hello {val1}, your balance is {val2}.") #you can add python expression between the curly brackets
 
 print(f"Hello {val2}, your balance is {val1}.")
 #...........................................................
