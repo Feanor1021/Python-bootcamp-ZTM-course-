@@ -15,3 +15,16 @@ A function is a set of instructions or procedures to perform a specific task,
 and a method is a set of instructions that are associated with an object.
 
 --------------------------------------------------------------------------------------------------------
+
+UNICODE VS ASCII:
+
+There are several string decoding methods. Ascii and unicode two of them.
+Ascii has 127 chracter in it and all the characters are represented by 1 byte. Ascii is takes much less byte to store but it can only decode english characters
+and some of the symbols such as {},[],! etc. But there are much more character among the all languages. Unicode is created to solve this problem.
+Unicode theoretically can decode over a million grapheme (the smallest meaningful contrastive unit in a writing system.). 
+We've talked about decoding what about encoding ? ASCII encodes characters into seven bits of binary data each strings characters has 7 bit long value (eg A=d'65 = 0b'1000001)
+Unicode has more than one encoding thecniques one of them UTF-32. In UFT-32 all the graphemes are represented by 4 byte. It is not good way to store strings because
+it takes too much space on memory. UFT-8 on the other hand more convenient in term of memory. UTF-8 assigns byte value to the minimum values that graphemes can fit.
+For example grapheme 'A' is 65 in decimal and it can fit in 1 byte so UTF-8 represent it with 1 byte. I't is more convenient for memory and by default python uses UTF-8
+
+--------------------------------------------------------------------------------------------------------
