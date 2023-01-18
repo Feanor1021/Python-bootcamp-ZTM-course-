@@ -5,7 +5,13 @@ user_a = age / 15
 
 An Expression is piece of code that produceses a value and statement is an entire line of code.
 
-age/15 is Expression, user_a = age / 15 is statement
+age / 15 is Expression, user_a = age / 15 is statement
 
 --------------------------------------------------------------------------------------------------------
 
+Methods and Functions:
+
+A function is a set of instructions or procedures to perform a specific task, 
+and a method is a set of instructions that are associated with an object.
+
+--------------------------------------------------------------------------------------------------------
