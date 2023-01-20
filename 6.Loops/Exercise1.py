@@ -4,7 +4,7 @@ counter = 0
 
 for i in my_list:
     counter += i
-    print(counter,i)
+print(counter)
 
 # for i in list(range(1,51)):
 #     print(i)
