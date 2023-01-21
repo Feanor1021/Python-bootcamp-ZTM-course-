@@ -54,3 +54,8 @@ print(string[::-1])#stepover is -1 and othher values are blank. Python gives las
 print(string[-1])
 print(string[-2])
 print(string[-12])
+
+#............................................................
+
+thislist = "apple banana muz kuz"
+print("apple" in thislist)
