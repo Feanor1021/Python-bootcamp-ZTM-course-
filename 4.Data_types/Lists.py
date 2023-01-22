@@ -104,3 +104,12 @@ print(new_list)
 a,*b,c,d=[1,2,3,4,5,6,7,8,9] #You can use *name just once. Where ever you want.
 print(a,b,c,d)
 #............................................................
+
+# del keyword:
+
+list1=[1,23,4,5,6,7]
+
+del list1[1] #you can also del entire list with "del list1" like .clear() method
+
+print(list1)
+#............................................................
