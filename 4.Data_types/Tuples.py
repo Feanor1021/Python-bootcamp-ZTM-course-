@@ -4,14 +4,9 @@
 # A tuple is a collection which is ordered and unchangeable. They are like constant lists. You can reach values in them like lists but you can't change them.
 # Tuples are written with round brackets.
 
-my_tuple = (1,2,3,4,5)
-my_tuple2 =tuple((1,2,3,4))
-new_tuple = my_tuple2+my_tuple
-print(new_tuple*2)
-print(my_tuple, my_tuple2[::-1]) #slicing etc works like lists
-#As you see lot of feature of the lists are usable with tuple too slicing, concatenation etc.
+my_tuple = (1,2,3,4,5,"hey")
+print(my_tuple)
 #............................................................
-
 # Tuple Items ?
 # Tuple items are ordered, unchangeable, and allow duplicate values.
 
@@ -30,11 +25,16 @@ print(my_tuple, my_tuple2[::-1]) #slicing etc works like lists
 # Since tuples are indexed, they can have items with the same value. It is don't sounds like feature but on of the data types is don't allow that, which is sets.
 #............................................................
 
-# Tupple length:
-# You can use len function with tuples too
-
-thistuple = ("apple", "banana", "cherry")
-print(len(thistuple))
+# Most of the tuple features are as same as list's features. Please look at them. "TUPLES ARE BASICALLY UNCHANGEABLE LISTS". You can see brief examples below
+# Note: since they are unchangeable you cant use item assignment. tuple[0]=2,tuple[1:2]=(1,2,3) not allowed
+my_tuple = (1,2,3,4,5)
+print(my_tuple)
+my_tuple2 =tuple((1,2,3,4))
+new_tuple = my_tuple2+my_tuple
+print(new_tuple*2)
+print(my_tuple, my_tuple2[::-1]) #slicing etc works like lists
+#As you see lot of feature of the lists are usable with tuple too slicing, concatenation etc.
+#Some important features are explained below
 #............................................................
 
 # Create Tuple With One Item
@@ -48,10 +48,27 @@ thistuple = ("apple")
 print(type(thistuple))
 #............................................................
 
-# Tuple Items - Data Types
-# Tuple items can be of any data type like lists.
+#Tuple unpacking:
+# It is as same as lists but there is a little differance that i want to show.
+# Note: The number of variables must match the number of values in the tuple, if not, you must use an asterisk to collect the remaining values as a "LIST".
+a,b,c,*d=(1,2,3,4) #You can use *name just once. Where ever you want.
+print(a,b,c,d)
 #............................................................
 
-# Most of the tuple features are as same as list's features. Please look at them. "TUPLES ARE BASICALLY UNCHANGEABLE LISTS"
-# Note: since they are unchangeable you cant use item assignment. tuple[0]=2,tuple[1:2]=(1,2,3) not allowed
+# Change Tuple Values
+# Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
 
+# But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+# Example
+# Convert the tuple into a list to be able to change it:
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+# Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:
+#............................................................
