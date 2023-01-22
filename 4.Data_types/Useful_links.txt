@@ -1,0 +1,5 @@
+1. General knowladge about lists --> https://www.w3schools.com/python/python_lists.asp , https://www.tutorialspoint.com/python3/python_lists.htm
+
+2. Built in list methods --> https://www.w3schools.com/python/python_lists_methods.asp
+
+3.General knowladge about tuples --> https://www.w3schools.com/python/python_tuples.asp
