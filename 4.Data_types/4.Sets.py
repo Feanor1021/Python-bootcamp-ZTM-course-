@@ -80,3 +80,10 @@ thisset2 = {12, 5, 3}
 # Adding item to sets.
 # Since sets don't have indexing, you can't reach their values directly, or you can not change any item in a set. But you can add, or remove items of the set via methods, which we will cover on next.
 # ............................................................
+
+# Unpacking the sets
+# with unpacking *'var' is returned as list, as like tuples.
+x, y, *z = {"apple", "banana", "cherry"}
+
+print(x, y, z)
+# ............................................................
