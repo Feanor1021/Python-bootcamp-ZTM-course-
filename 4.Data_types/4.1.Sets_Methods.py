@@ -88,29 +88,107 @@ z = x.intersection(y)
 print(z)
 # ............................................................
 
+# intersection_update method : The intersection_update() method removes the items that is not present in both sets (or in all sets if the comparison is done between more than two sets).
+# Syntax : set.intersection_update(set1, set2, ....)
+# parameter : set1 is "Required". The set to search for equal items in. set2 and more are "Optional"
 
-# intersection_update method : 
-# Syntax : set.clear()
-# parameter : None
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
 
+x.intersection_update(y)
+
+print(x)
 # ............................................................
 
+# Isdisjoint method : The isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False. In short if they don't have common item it return True otherwise false.
+# Syntax : set.isdisjoint(set)
+# parameter : "Required". The set to search for equal items in
 
-# Clear method :
-# Syntax : set.clear()
-# parameter : None
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
 
+z = y.isdisjoint(x)
+
+print(z)
 # ............................................................
 
-# Difference method :
-# Syntax : set.clear()
-# parameter : None
+# Issubset method : The issubset() method returns True if all items in the set exists in the specified set, otherwise it retuns False.
+# Syntax : set.issubset(set).
+# parameter : "Required". The set to search for equal items in
 
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+
+z = x.issubset(y)  # It looks that wether the x is sub set of y
+
+print(z)
 # ............................................................
 
+# Issuperset method : The issuperset() method returns True if all items in the specified set exists in the original set, otherwise it retuns False.
+# Syntax : set.issuperset(set)
+# parameter : "Required". The set to search for equal items in
 
-# Clear method :
-# Syntax : set.clear()
-# parameter : None
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
 
+z = y.issuperset(x)  # It looks that wether the x is sub set of y
+
+print(z)
+# ............................................................
+
+# Pop method : The pop() method removes a random item from the set. This method returns the removed item. It is exactly like stack's pop function.
+# It is actually not random. Sets are implementation of hash tables. pop method is pops the firs hash entry in hashtable.
+# Syntax : set.pop()
+# parameter : No parameter values.
+
+fruits = {"apple", "banana", "cherry"}
+
+# Unlike the lists you can't give argument to pop method. Because sets are unordered and can't be reachable with index nums.
+fruits.pop()
+print(fruits)
+# ............................................................
+
+# Symmetric_difference method :
+# Syntax : set.symetric_difference(set)
+# parameter : "Required". The set to check for matches in
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.symmetric_difference(y)  # it returns not common items.
+print(z)
+# ............................................................
+
+# symmetric_difference_update method : The symmetric_difference_update() method updates the original set by removing items that are present in both sets, and inserting the other items.
+# Syntax : set.symmetric_difference_update(set)
+# parameter : 	"Required". The set to check for matches in
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.symmetric_difference_update(y)
+print(x)
+# ............................................................
+
+# UNION method : Definition and Usage The union() method returns a set that contains all items from the original set, and all items from the specified set(s).
+# You can specify as many sets you want, separated by commas.It does not have to be a set, it can be any iterable object. If an item is present in more than one set, the result will contain only one appearance of this item.
+# Syntax : set.union(iterable1, iterable, iterable3, iterable4....)
+# parameter : iterable1 is 	"Required". The iterable to unify with. iterable2 and others are "Optional"
+
+x = {"apple", "banana", "cherry"}
+y = ["google", "microsoft", "apple"]
+
+z = x.union(y)  # since it is a set, common items are not coppied twice ofc.
+print(z)
+# ............................................................
+
+# Update method : The update() method updates the current set, by adding items from another set (or any other iterable). If an item is present in both sets, only one appearance of this item will be present in the updated set.
+# Syntax : set.update(iterable)
+# parameter : Required. The iterable insert into the current se
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.update(y)
+print(x)
 # ............................................................
