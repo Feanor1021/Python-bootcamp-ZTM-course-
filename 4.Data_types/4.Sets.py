@@ -1,7 +1,7 @@
 # Set
 # Sets are used to store multiple items in a single variable.
 # Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
-# A set is a collection which is unordered, unchangeable*, and unindexed.
+# A set is a collection which is unordered, unchangeable*, unhashable (which means you cant create a matrix of sets) and unindexed.
 
 # All items are not stored successively like list or tuples !!! OS store them random on the ram.
 thisset = {"apple", "banana", "cherry"}
@@ -60,7 +60,7 @@ print(thisset)
 
 # Access Items
 # You cannot access items in a set by referring to an index or a key.
-# But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+# But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword..
 
 thisset = {"apple", "banana", "cherry"}
 for x in thisset:  # You can't indexed them but you can reach values of it with for just like in list or Tuples
