@@ -28,3 +28,23 @@ it takes too much space on memory. UFT-8 on the other hand more convenient in te
 For example grapheme 'A' is 65 in decimal and it can fit in 1 byte so UTF-8 represent it with 1 byte. I't is more convenient for memory and by default python uses UTF-8
 
 --------------------------------------------------------------------------------------------------------
+
+Encapsulation :
+
+Encapsulation is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class.
+Actually Encapsulation is an mandatory concept of engineering. We are continually encapsulate things. If we want to have
+an class we can encapsulate lot of functionality in it to ease the work with it or use it more efficiently. In short Encaplation is the one of the most important 
+thing for the reducing complexity of the problems.
+--------------------------------------------------------------------------------------------------------
+
+Abstraction :
+
+Abstraction in Python: Data abstraction in python and data encapsulation in python programming are related to each other. 
+The main point that is necessary here to note is that data abstraction is only possible to achieve through encapsulation.
+
+Encapsulation means storing or placing data in a single place to make it easily readable and compact in one place. 
+Whereas data abstraction in python programming means to hide internal functionalities that are performing on the application using codes and to show only essential information (class attributes).
+In short doing the encapsulation we are abstract some thing. For example we have encapsulate the len function in standart library to reduce the complexity but at the same time we abstract it.
+Who ever use len function, don't have to know what happens in the back.
+--------------------------------------------------------------------------------------------------------
