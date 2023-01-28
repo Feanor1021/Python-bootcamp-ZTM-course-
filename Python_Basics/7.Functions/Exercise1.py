@@ -1,32 +1,33 @@
-#Find highest even value in a list.
+# Find highest even value in a list.
 
-#first method:
-#fist sort then reverse it. First even value is highest value among all even numbers.
+# first method:
+# fist sort then reverse it. First even value is highest value among all even numbers.
 
 def highest_even1(list_par):
-    list_par=list(list_par) #Function can work with tuple etc.
+    list_par = list(list_par)  # Function can work with tuple etc.
     list_par.sort()
     list_par.reverse()
     for i in list_par:
         if (i % 2 == 0):
             return i
 
-#second method
-#Fisrt we will choose a value that smallest among all list values(which is -inf, none of the list value can't be smaller than in our case). After that we'll iterate on list.
-#if any even value is has higher value than our highest_val then it'll be the highest.
+# second method
+# Fisrt we will choose a value that smallest among all list values(which is -inf, none of the list value can't be smaller than in our case). After that we'll iterate on list.
+# if any even value is has higher value than our highest_val then it'll be the highest.
+
 
 def highest_even2(list_par):
-    list_par=list(list_par) #Function can work with tuple etc.
-    i, highest_val = 0, float('-inf') #min possible value to highest_val
-    
-    while i<len(list_par):
+    list_par = list(list_par)  # Function can work with tuple etc.
+    i, highest_val = 0, float('-inf')  # min possible value to highest_val
+
+    while i < len(list_par):
         if ((list_par[i] % 2 == 0) and (list_par[i] > highest_val)):
             highest_val = list_par[i]
         i += 1
     return highest_val
 
 
-#third method
+# third method
 
 def highest_even3(list_par):
     even = []
@@ -35,7 +36,20 @@ def highest_even3(list_par):
             even.append(i)
     return max(even)
 
-#fourth method
+# fourth method
+
 
 def highest_even4(liste):
-    return max(value for value in liste if value % 2 == 0 )
+    return max(value for value in liste if value % 2 == 0)
+
+# If you do not know the number of arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+
+
+def my_function(* kids):
+    print("The youngest child is " + kids[2])
+
+# If you do not know the number of keyword arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+
+
+def my_function(** kid):
+    print("His last name is " + kid["lname"])
